@@ -48,6 +48,11 @@
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^7.0.0"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run build"
+    }
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
